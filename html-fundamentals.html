@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals Course - Emerson HTML Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Emerson HTML Lab</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" class="nav-link" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="index.html#courses" class="nav-link" data-en="Courses" data-fr="Cours">Courses</a></li>
+                    <li><a href="index.html#resources" class="nav-link" data-en="Resources"
+                            data-fr="Ressources">Resources</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Course Header -->
+    <section class="course-header">
+        <div class="container">
+            <h1 data-en="HTML Fundamentals Course" data-fr="Cours Fondamentaux HTML">HTML Fundamentals Course</h1>
+            <p data-en="Master the building blocks of web development and create professional websites"
+                data-fr="Maîtrisez les fondamentaux du développement web et créez des sites professionnels">Master the
+                building blocks of web development and create professional websites</p>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content">
+        <div class="container">
+            <!-- Course Overview -->
+            <div class="course-section">
+                <h2 data-en="Course Overview" data-fr="Aperçu du cours">Course Overview</h2>
+                <p data-en="This comprehensive HTML Fundamentals course is designed for beginners who want to learn the essentials of web development. Through hands-on exercises and practical projects, you'll gain the skills needed to build responsive and semantic web pages."
+                    data-fr="Ce cours complet sur les fondamentaux HTML est conçu pour les débutants qui souhaitent apprendre l'essentiel du développement web. Grâce à des exercices pratiques et des projets concrets, vous acquerrez les compétences nécessaires pour créer des pages web réactives et sémantiques.">
+                    This comprehensive HTML Fundamentals course is designed for beginners who want to learn the
+                    essentials of web development. Through hands-on exercises and practical projects, you'll gain the
+                    skills needed to build responsive and semantic web pages.</p>
+            </div>
+
+            <!-- Course Details -->
+            <div class="course-details-grid">
+                <div class="detail-card">
+                    <h3 data-en="📚 Duration" data-fr="📚 Durée">📚 Duration</h3>
+                    <p data-en="4 Weeks (20 hours)" data-fr="4 semaines (20 heures)">4 Weeks (20 hours)</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="📊 Level" data-fr="📊 Niveau">📊 Level</h3>
+                    <p data-en="Beginner" data-fr="Débutant">Beginner</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="✅ Skills" data-fr="✅ Compétences">✅ Skills</h3>
+                    <p data-en="5+ Core Concepts" data-fr="5+ concepts clés">5+ Core Concepts</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="🏆 Certificate" data-fr="🏆 Certificat">🏆 Certificate</h3>
+                    <p data-en="Yes, upon completion" data-fr="Oui, à la fin du cours">Yes, upon completion</p>
+                </div>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="course-section">
+                <h2 data-en="What You'll Learn" data-fr="Ce que vous apprendrez">What You'll Learn</h2>
+                <ul class="learning-outcomes">
+                    <li data-en="Understand HTML structure and semantic markup"
+                        data-fr="Comprendre la structure HTML et le balisage sémantique">Understand HTML structure and
+                        semantic markup</li>
+                    <li data-en="Create forms and handle user input effectively"
+                        data-fr="Créer des formulaires et gérer efficacement les entrées utilisateur">Create forms and
+                        handle user input effectively</li>
+                    <li data-en="Work with images, videos, and multimedia content"
+                        data-fr="Travailler avec des images, des vidéos et du contenu multimédia">Work with images,
+                        videos, and multimedia content</li>
+                    <li data-en="Build accessible and SEO-friendly web pages"
+                        data-fr="Construire des pages web accessibles et optimisées pour le référencement">Build
+                        accessible and SEO-friendly web pages</li>
+                    <li data-en="Use HTML5 features and best practices"
+                        data-fr="Utiliser les fonctionnalités HTML5 et les meilleures pratiques">Use HTML5 features and
+                        best practices</li>
+                    <li data-en="Create responsive layouts with proper HTML structure"
+                        data-fr="Créer des mises en page réactives avec une structure HTML appropriée">Create responsive
+                        layouts with proper HTML structure</li>
+                </ul>
+            </div>
+
+            <!-- Course Modules -->
+            <div class="course-section">
+                <h2 data-en="Course Modules" data-fr="Modules du cours">Course Modules</h2>
+
+                <div class="module">
+                    <h3 data-en="Module 1: HTML Basics" data-fr="Module 1 : Bases HTML">📌 Module 1: HTML Basics</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="HTML document structure and DOCTYPE"
+                            data-fr="Structure du document HTML et DOCTYPE">HTML document structure and DOCTYPE</li>
+                        <li data-en="Head and body elements" data-fr="Éléments head et body">Head and body elements</li>
+                        <li data-en="Meta tags and character encoding" data-fr="Balises meta et codage des caractères">
+                            Meta tags and character encoding</li>
+                        <li data-en="Creating your first web page" data-fr="Créer votre première page web">Creating your
+                            first web page</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 2: Text & Content" data-fr="Module 2 : Texte et contenu">📌 Module 2: Text &
+                        Content</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="Headings (h1-h6) and paragraphs" data-fr="Titres (h1-h6) et paragraphes">Headings
+                            (h1-h6) and paragraphs</li>
+                        <li data-en="Text formatting (bold, italic, underline)"
+                            data-fr="Formatage de texte (gras, italique, souligné)">Text formatting (bold, italic,
+                            underline)</li>
+                        <li data-en="Lists (ordered, unordered, definition)"
+                            data-fr="Listes (ordonnées, non ordonnées, de définition)">Lists (ordered, unordered,
+                            definition)</li>
+                        <li data-en="Line breaks and horizontal rules" data-fr="Sauts de ligne et traits horizontaux">
+                            Line breaks and horizontal rules</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 3: Links & Navigation" data-fr="Module 3 : Liens et navigation">📌 Module 3:
+                        Links & Navigation</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="Creating hyperlinks and anchor tags"
+                            data-fr="Créer des hyperliens et des balises d'ancrage">Creating hyperlinks and anchor tags
+                        </li>
+                        <li data-en="Internal and external links" data-fr="Liens internes et externes">Internal and
+                            external links</li>
+                        <li data-en="Navigation menus and site structure"
+                            data-fr="Menus de navigation et structure du site">Navigation menus and site structure</li>
+                        <li data-en="Email links and target attributes"
+                            data-fr="Liens de courrier électronique et attributs de cible">Email links and target
+                            attributes</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 4: Images & Multimedia" data-fr="Module 4 : Images et multimédia">📌 Module 4:
+                        Images & Multimedia</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="Working with images and the img tag"
+                            data-fr="Travailler avec des images et la balise img">Working with images and the img tag
+                        </li>
+                        <li data-en="Image formats and optimization" data-fr="Formats d'image et optimisation">Image
+                            formats and optimization</li>
+                        <li data-en="Embedding videos and audio" data-fr="Intégration de vidéos et d'audio">Embedding
+                            videos and audio</li>
+                        <li data-en="Image maps and responsive images" data-fr="Cartes d'image et images réactives">
+                            Image maps and responsive images</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 5: Forms & Input" data-fr="Module 5 : Formulaires et entrée">📌 Module 5: Forms
+                        & Input</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="Creating forms with form elements"
+                            data-fr="Créer des formulaires avec des éléments de formulaire">Creating forms with form
+                            elements</li>
+                        <li data-en="Input types and attributes" data-fr="Types et attributs d'entrée">Input types and
+                            attributes</li>
+                        <li data-en="Labels, buttons, and textareas" data-fr="Étiquettes, boutons et zones de texte">
+                            Labels, buttons, and textareas</li>
+                        <li data-en="Form validation basics" data-fr="Bases de la validation de formulaire">Form
+                            validation basics</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 6: Semantic HTML & Best Practices"
+                        data-fr="Module 6 : HTML sémantique et meilleures pratiques">📌 Module 6: Semantic HTML & Best
+                        Practices</h3>
+                    <p data-en="Duration: 2 hours" data-fr="Durée : 2 heures">Duration: 2 hours</p>
+                    <ul>
+                        <li data-en="Semantic HTML5 elements" data-fr="Éléments HTML5 sémantiques">Semantic HTML5
+                            elements</li>
+                        <li data-en="Accessibility (a11y) standards" data-fr="Normes d'accessibilité (a11y)">
+                            Accessibility (a11y) standards</li>
+                        <li data-en="SEO optimization techniques" data-fr="Techniques d'optimisation SEO">SEO
+                            optimization techniques</li>
+                        <li data-en="HTML5 best practices and performance"
+                            data-fr="Meilleures pratiques HTML5 et performances">HTML5 best practices and performance
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hands-On Projects -->
+            <div class="course-section">
+                <h2 data-en="Hands-On Projects" data-fr="Projets pratiques">Hands-On Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 data-en="Project 1: Personal Resume" data-fr="Projet 1 : CV personnel">📄 Project 1:
+                            Personal Resume</h3>
+                        <p data-en="Build your first HTML page - a professional resume showcasing your skills and experience."
+                            data-fr="Construisez votre première page HTML - un CV professionnel présentant vos compétences et votre expérience.">
+                            Build your first HTML page - a professional resume showcasing your skills and experience.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 2: Portfolio Website" data-fr="Projet 2 : Site portfolio">🎨 Project 2:
+                            Portfolio Website</h3>
+                        <p data-en="Create a multi-page portfolio site with navigation menus and image galleries."
+                            data-fr="Créez un site portfolio multi-pages avec des menus de navigation et des galeries d'images.">
+                            Create a multi-page portfolio site with navigation menus and image galleries.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 3: Contact Form" data-fr="Projet 3 : Formulaire de contact">📋 Project 3:
+                            Contact Form</h3>
+                        <p data-en="Build a functional contact form with various input types and validation."
+                            data-fr="Construisez un formulaire de contact fonctionnel avec différents types d'entrée et validation.">
+                            Build a functional contact form with various input types and validation.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 4: Blog Page" data-fr="Projet 4 : Page de blog">✍️ Project 4: Blog Page
+                        </h3>
+                        <p data-en="Create a blog layout using semantic HTML5 elements like article, section, and aside."
+                            data-fr="Créez une mise en page de blog à l'aide d'éléments HTML5 sémantiques comme article, section et aside.">
+                            Create a blog layout using semantic HTML5 elements like article, section, and aside.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requirements -->
+            <div class="course-section">
+                <h2 data-en="Course Requirements" data-fr="Prérequis du cours">Course Requirements</h2>
+                <ul class="requirements">
+                    <li data-en="A computer with internet connection" data-fr="Un ordinateur avec connexion Internet">✓
+                        A computer with internet connection</li>
+                    <li data-en="Text editor (VS Code, Sublime Text, or Atom)"
+                        data-fr="Éditeur de texte (VS Code, Sublime Text ou Atom)">✓ Text editor (VS Code, Sublime Text,
+                        or Atom)</li>
+                    <li data-en="Web browser (Chrome, Firefox, Safari, or Edge)"
+                        data-fr="Navigateur Web (Chrome, Firefox, Safari ou Edge)">✓ Web browser (Chrome, Firefox,
+                        Safari, or Edge)</li>
+                    <li data-en="No prior programming experience needed"
+                        data-fr="Aucune expérience préalable en programmation requise">✓ No prior programming experience
+                        needed</li>
+                    <li data-en="Basic computer literacy" data-fr="Compétences informatiques de base">✓ Basic computer
+                        literacy</li>
+                </ul>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="course-cta">
+                <h2 data-en="Ready to Learn?" data-fr="Prêt à apprendre ?">Ready to Learn?</h2>
+                <p data-en="Enroll now and start your journey into web development today!"
+                    data-fr="Inscrivez-vous maintenant et commencez votre parcours en développement web !">Enroll now
+                    and start your journey into web development today!</p>
+                <a href="index.html#contact" class="cta-button" data-en="Enroll Now" data-fr="S'inscrire">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2026 Emerson HTML Lab. All rights reserved."
+                data-fr="&copy; 2026 Laboratoire HTML Emerson. Tous droits réservés.">&copy; 2026 Emerson HTML Lab. All
+                rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            changeLanguage(savedLanguage);
+        });
+    </script>
+</body>
+
+</html>

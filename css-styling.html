@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Course - Emerson HTML Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Emerson HTML Lab</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" class="nav-link" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="index.html#courses" class="nav-link" data-en="Courses" data-fr="Cours">Courses</a></li>
+                    <li><a href="index.html#resources" class="nav-link" data-en="Resources"
+                            data-fr="Ressources">Resources</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Course Header -->
+    <section class="course-header">
+        <div class="container">
+            <h1 data-en="CSS Styling Course" data-fr="Cours de Mise en Forme CSS">CSS Styling Course</h1>
+            <p data-en="Master responsive design and modern CSS techniques to create beautiful, professional websites"
+                data-fr="Maîtrisez le design réactif et les techniques CSS modernes pour créer des sites web professionnels">
+                Master responsive design and modern CSS techniques to create beautiful, professional websites</p>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content">
+        <div class="container">
+            <!-- Course Overview -->
+            <div class="course-section">
+                <h2 data-en="Course Overview" data-fr="Aperçu du cours">Course Overview</h2>
+                <p data-en="This comprehensive CSS Styling course takes you from basic styling to advanced responsive design techniques. Learn how to create visually stunning websites that work perfectly on all devices and screen sizes."
+                    data-fr="Ce cours complet de mise en forme CSS vous emmène des styles de base aux techniques avancées de design réactif. Apprenez à créer des sites web visuellement époustouflants qui fonctionnent parfaitement sur tous les appareils et toutes les tailles d'écran.">
+                    This comprehensive CSS Styling course takes you from basic styling to advanced responsive design
+                    techniques. Learn how to create visually stunning websites that work perfectly on all devices and
+                    screen sizes.</p>
+            </div>
+
+            <!-- Course Details -->
+            <div class="course-details-grid">
+                <div class="detail-card">
+                    <h3 data-en="📚 Duration" data-fr="📚 Durée">📚 Duration</h3>
+                    <p data-en="6 Weeks (30 hours)" data-fr="6 semaines (30 heures)">6 Weeks (30 hours)</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="📊 Level" data-fr="📊 Niveau">📊 Level</h3>
+                    <p data-en="Intermediate" data-fr="Intermédiaire">Intermediate</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="✅ Skills" data-fr="✅ Compétences">✅ Skills</h3>
+                    <p data-en="8+ Advanced Techniques" data-fr="8+ techniques avancées">8+ Advanced Techniques</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="🏆 Certificate" data-fr="🏆 Certificat">🏆 Certificate</h3>
+                    <p data-en="Yes, upon completion" data-fr="Oui, à la fin du cours">Yes, upon completion</p>
+                </div>
+            </div>
+
+            <!-- Prerequisites -->
+            <div class="course-section">
+                <h2 data-en="Prerequisites" data-fr="Prérequis">Prerequisites</h2>
+                <ul class="requirements">
+                    <li data-en="Basic HTML knowledge (HTML Fundamentals course recommended)"
+                        data-fr="Connaissances de base en HTML (cours Fondamentaux HTML recommandé)">✓ Basic HTML
+                        knowledge (HTML Fundamentals course recommended)</li>
+                    <li data-en="Text editor and web browser" data-fr="Éditeur de texte et navigateur web">✓ Text editor
+                        and web browser</li>
+                    <li data-en="Understanding of basic computer operations"
+                        data-fr="Compréhension des opérations informatiques de base">✓ Understanding of basic computer
+                        operations</li>
+                </ul>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="course-section">
+                <h2 data-en="What You'll Learn" data-fr="Ce que vous apprendrez">What You'll Learn</h2>
+                <ul class="learning-outcomes">
+                    <li data-en="Master CSS selectors and specificity rules"
+                        data-fr="Maîtriser les sélecteurs CSS et les règles de spécificité">Master CSS selectors and
+                        specificity rules</li>
+                    <li data-en="Create responsive layouts with Flexbox and Grid"
+                        data-fr="Créer des mises en page réactives avec Flexbox et Grid">Create responsive layouts with
+                        Flexbox and Grid</li>
+                    <li data-en="Implement modern CSS animations and transitions"
+                        data-fr="Implémenter des animations et transitions CSS modernes">Implement modern CSS animations
+                        and transitions</li>
+                    <li data-en="Work with CSS variables and custom properties"
+                        data-fr="Travailler avec les variables CSS et les propriétés personnalisées">Work with CSS
+                        variables and custom properties</li>
+                    <li data-en="Optimize CSS for performance and maintainability"
+                        data-fr="Optimiser CSS pour les performances et la maintenabilité">Optimize CSS for performance
+                        and maintainability</li>
+                    <li data-en="Build mobile-first responsive designs"
+                        data-fr="Construire des designs réactifs mobile-first">Build mobile-first responsive designs
+                    </li>
+                    <li data-en="Use CSS preprocessors and build tools"
+                        data-fr="Utiliser les préprocesseurs CSS et les outils de construction">Use CSS preprocessors
+                        and build tools</li>
+                    <li data-en="Debug and troubleshoot CSS issues" data-fr="Déboguer et résoudre les problèmes CSS">
+                        Debug and troubleshoot CSS issues</li>
+                </ul>
+            </div>
+
+            <!-- Course Modules -->
+            <div class="course-section">
+                <h2 data-en="Course Modules" data-fr="Modules du cours">Course Modules</h2>
+
+                <div class="module">
+                    <h3 data-en="Module 1: CSS Fundamentals" data-fr="Module 1 : Fondamentaux CSS">🎨 Module 1: CSS
+                        Fundamentals</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="CSS syntax and structure" data-fr="Syntaxe et structure CSS">CSS syntax and
+                            structure</li>
+                        <li data-en="Ways to add CSS to HTML" data-fr="Façons d'ajouter CSS à HTML">Ways to add CSS to
+                            HTML</li>
+                        <li data-en="CSS selectors and combinators" data-fr="Sélecteurs CSS et combinateurs">CSS
+                            selectors and combinators</li>
+                        <li data-en="CSS specificity and cascade" data-fr="Spécificité CSS et cascade">CSS specificity
+                            and cascade</li>
+                        <li data-en="CSS box model and layout" data-fr="Modèle de boîte CSS et mise en page">CSS box
+                            model and layout</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 2: Colors & Typography" data-fr="Module 2 : Couleurs et typographie">🎨 Module
+                        2: Colors & Typography</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="Color formats (hex, rgb, hsl)" data-fr="Formats de couleur (hex, rgb, hsl)">Color
+                            formats (hex, rgb, hsl)</li>
+                        <li data-en="Typography properties and web fonts"
+                            data-fr="Propriétés de typographie et polices web">Typography properties and web fonts</li>
+                        <li data-en="Text styling and formatting" data-fr="Style et formatage du texte">Text styling and
+                            formatting</li>
+                        <li data-en="Google Fonts integration" data-fr="Intégration de Google Fonts">Google Fonts
+                            integration</li>
+                        <li data-en="Creating readable typography systems"
+                            data-fr="Créer des systèmes de typographie lisibles">Creating readable typography systems
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 3: Layout & Positioning" data-fr="Module 3 : Mise en page et positionnement">🎨
+                        Module 3: Layout & Positioning</h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="CSS positioning (static, relative, absolute, fixed)"
+                            data-fr="Positionnement CSS (statique, relatif, absolu, fixe)">CSS positioning (static,
+                            relative, absolute, fixed)</li>
+                        <li data-en="Float and clear properties" data-fr="Propriétés float et clear">Float and clear
+                            properties</li>
+                        <li data-en="CSS display property and values" data-fr="Propriété display CSS et valeurs">CSS
+                            display property and values</li>
+                        <li data-en="Z-index and stacking context" data-fr="Z-index et contexte d'empilement">Z-index
+                            and stacking context</li>
+                        <li data-en="Creating multi-column layouts" data-fr="Créer des mises en page multi-colonnes">
+                            Creating multi-column layouts</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 4: Flexbox Layout" data-fr="Module 4 : Mise en page Flexbox">🎨 Module 4:
+                        Flexbox Layout</h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="Flexbox container properties" data-fr="Propriétés du conteneur Flexbox">Flexbox
+                            container properties</li>
+                        <li data-en="Flex items and alignment" data-fr="Éléments flex et alignement">Flex items and
+                            alignment</li>
+                        <li data-en="Building responsive navigation" data-fr="Construire une navigation réactive">
+                            Building responsive navigation</li>
+                        <li data-en="Card layouts and galleries" data-fr="Mises en page de cartes et galeries">Card
+                            layouts and galleries</li>
+                        <li data-en="Holy Grail layout with Flexbox" data-fr="Mise en page Holy Grail avec Flexbox">Holy
+                            Grail layout with Flexbox</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 5: CSS Grid Layout" data-fr="Module 5 : Mise en page CSS Grid">🎨 Module 5: CSS
+                        Grid Layout</h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="Grid container and item properties"
+                            data-fr="Propriétés du conteneur et des éléments Grid">Grid container and item properties
+                        </li>
+                        <li data-en="Grid lines, tracks, and areas" data-fr="Lignes, pistes et zones Grid">Grid lines,
+                            tracks, and areas</li>
+                        <li data-en="Responsive grid layouts" data-fr="Mises en page Grid réactives">Responsive grid
+                            layouts</li>
+                        <li data-en="Grid vs Flexbox comparison" data-fr="Comparaison Grid vs Flexbox">Grid vs Flexbox
+                            comparison</li>
+                        <li data-en="Complex layouts with CSS Grid" data-fr="Mises en page complexes avec CSS Grid">
+                            Complex layouts with CSS Grid</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 6: Responsive Design" data-fr="Module 6 : Design réactif">🎨 Module 6:
+                        Responsive Design</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="Media queries and breakpoints" data-fr="Requêtes média et points d'arrêt">Media
+                            queries and breakpoints</li>
+                        <li data-en="Mobile-first vs desktop-first approach"
+                            data-fr="Approche mobile-first vs desktop-first">Mobile-first vs desktop-first approach</li>
+                        <li data-en="Responsive images and media" data-fr="Images et médias réactifs">Responsive images
+                            and media</li>
+                        <li data-en="CSS units (px, em, rem, vh, vw)" data-fr="Unités CSS (px, em, rem, vh, vw)">CSS
+                            units (px, em, rem, vh, vw)</li>
+                        <li data-en="Testing responsive designs" data-fr="Tester les designs réactifs">Testing
+                            responsive designs</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 7: CSS Animations & Effects" data-fr="Module 7 : Animations et effets CSS">🎨
+                        Module 7: CSS Animations & Effects</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="CSS transitions and transforms" data-fr="Transitions et transformations CSS">CSS
+                            transitions and transforms</li>
+                        <li data-en="Keyframes and animations" data-fr="Images clés et animations">Keyframes and
+                            animations</li>
+                        <li data-en="Hover effects and micro-interactions"
+                            data-fr="Effets de survol et micro-interactions">Hover effects and micro-interactions</li>
+                        <li data-en="Performance considerations" data-fr="Considérations de performance">Performance
+                            considerations</li>
+                        <li data-en="CSS-only loading animations" data-fr="Animations de chargement CSS uniquement">
+                            CSS-only loading animations</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 8: Advanced CSS & Tools" data-fr="Module 8 : CSS avancé et outils">🎨 Module 8:
+                        Advanced CSS & Tools</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="CSS custom properties (variables)"
+                            data-fr="Propriétés personnalisées CSS (variables)">CSS custom properties (variables)</li>
+                        <li data-en="CSS calc() and other functions" data-fr="CSS calc() et autres fonctions">CSS calc()
+                            and other functions</li>
+                        <li data-en="CSS preprocessors (Sass/SCSS)" data-fr="Préprocesseurs CSS (Sass/SCSS)">CSS
+                            preprocessors (Sass/SCSS)</li>
+                        <li data-en="CSS methodologies (BEM, SMACSS)" data-fr="Méthodologies CSS (BEM, SMACSS)">CSS
+                            methodologies (BEM, SMACSS)</li>
+                        <li data-en="CSS optimization and minification" data-fr="Optimisation et minification CSS">CSS
+                            optimization and minification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hands-On Projects -->
+            <div class="course-section">
+                <h2 data-en="Hands-On Projects" data-fr="Projets pratiques">Hands-On Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 data-en="Project 1: Personal Portfolio" data-fr="Projet 1 : Portfolio personnel">🎨 Project
+                            1: Personal Portfolio</h3>
+                        <p data-en="Build a responsive portfolio website using Flexbox and CSS Grid layouts."
+                            data-fr="Construisez un site web portfolio réactif utilisant les mises en page Flexbox et CSS Grid.">
+                            Build a responsive portfolio website using Flexbox and CSS Grid layouts.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 2: E-commerce Product Page" data-fr="Projet 2 : Page produit e-commerce">🛒
+                            Project 2: E-commerce Product Page</h3>
+                        <p data-en="Create a modern product page with image galleries, reviews, and responsive design."
+                            data-fr="Créez une page produit moderne avec galeries d'images, avis et design réactif.">
+                            Create a modern product page with image galleries, reviews, and responsive design.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 3: Interactive Dashboard" data-fr="Projet 3 : Tableau de bord interactif">
+                            📊 Project 3: Interactive Dashboard</h3>
+                        <p data-en="Design an admin dashboard with CSS Grid, animations, and hover effects."
+                            data-fr="Concevez un tableau de bord administrateur avec CSS Grid, animations et effets de survol.">
+                            Design an admin dashboard with CSS Grid, animations, and hover effects.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 4: Landing Page" data-fr="Projet 4 : Page d'atterrissage">🚀 Project 4:
+                            Landing Page</h3>
+                        <p data-en="Build a conversion-optimized landing page with modern CSS techniques."
+                            data-fr="Construisez une page d'atterrissage optimisée pour la conversion avec des techniques CSS modernes.">
+                            Build a conversion-optimized landing page with modern CSS techniques.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 5: CSS Framework" data-fr="Projet 5 : Framework CSS">🛠️ Project 5: CSS
+                            Framework</h3>
+                        <p data-en="Create your own CSS component library with variables and reusable styles."
+                            data-fr="Créez votre propre bibliothèque de composants CSS avec des variables et des styles réutilisables.">
+                            Create your own CSS component library with variables and reusable styles.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 6: Final Showcase" data-fr="Projet 6 : Vitrine finale">🏆 Project 6: Final
+                            Showcase</h3>
+                        <p data-en="Combine all learned techniques in a comprehensive website project."
+                            data-fr="Combinez toutes les techniques apprises dans un projet de site web complet.">
+                            Combine all learned techniques in a comprehensive website project.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Resources -->
+            <div class="course-section">
+                <h2 data-en="Tools & Resources" data-fr="Outils et ressources">Tools & Resources</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h4 data-en="Development Tools" data-fr="Outils de développement">🛠️ Development Tools</h4>
+                        <ul>
+                            <li data-en="VS Code with CSS extensions" data-fr="VS Code avec extensions CSS">VS Code with
+                                CSS extensions</li>
+                            <li data-en="Chrome DevTools" data-fr="Chrome DevTools">Chrome DevTools</li>
+                            <li data-en="Firefox Developer Edition" data-fr="Firefox Developer Edition">Firefox
+                                Developer Edition</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card">
+                        <h4 data-en="Online Resources" data-fr="Ressources en ligne">🌐 Online Resources</h4>
+                        <ul>
+                            <li data-en="MDN Web Docs" data-fr="MDN Web Docs">MDN Web Docs</li>
+                            <li data-en="CSS-Tricks" data-fr="CSS-Tricks">CSS-Tricks</li>
+                            <li data-en="CodePen" data-fr="CodePen">CodePen</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card">
+                        <h4 data-en="Design Resources" data-fr="Ressources de design">🎨 Design Resources</h4>
+                        <ul>
+                            <li data-en="Google Fonts" data-fr="Google Fonts">Google Fonts</li>
+                            <li data-en="Coolors color palette" data-fr="Palette de couleurs Coolors">Coolors color
+                                palette</li>
+                            <li data-en="Figma for design" data-fr="Figma pour le design">Figma for design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="course-cta">
+                <h2 data-en="Ready to Master CSS?" data-fr="Prêt à maîtriser CSS ?">Ready to Master CSS?</h2>
+                <p data-en="Transform your websites with professional styling and responsive design skills!"
+                    data-fr="Transformez vos sites web avec des compétences professionnelles en style et design réactif !">
+                    Transform your websites with professional styling and responsive design skills!</p>
+                <a href="index.html#contact" class="cta-button" data-en="Enroll Now" data-fr="S'inscrire">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2026 Emerson HTML Lab. All rights reserved."
+                data-fr="&copy; 2026 Laboratoire HTML Emerson. Tous droits réservés.">&copy; 2026 Emerson HTML Lab. All
+                rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+    </footer>
+
+    <script>
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            changeLanguage(savedLanguage);
+        });
+    </script>
+</body>
+
+</html>

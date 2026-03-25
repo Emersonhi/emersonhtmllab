@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics Course - Emerson HTML Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Emerson HTML Lab</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" class="nav-link" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="index.html#courses" class="nav-link" data-en="Courses" data-fr="Cours">Courses</a></li>
+                    <li><a href="index.html#resources" class="nav-link" data-en="Resources"
+                            data-fr="Ressources">Resources</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Course Header -->
+    <section class="course-header">
+        <div class="container">
+            <h1 data-en="JavaScript Basics Course" data-fr="Cours Bases de JavaScript">JavaScript Basics Course</h1>
+            <p data-en="Learn programming fundamentals and bring interactivity to your websites with JavaScript"
+                data-fr="Apprenez les fondamentaux de la programmation et apportez de l'interactivité à vos sites web avec JavaScript">
+                Learn programming fundamentals and bring interactivity to your websites with JavaScript</p>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content">
+        <div class="container">
+            <!-- Course Overview -->
+            <div class="course-section">
+                <h2 data-en="Course Overview" data-fr="Aperçu du cours">Course Overview</h2>
+                <p data-en="This comprehensive JavaScript Basics course introduces you to programming concepts and interactive web development. You'll learn how to make websites dynamic, responsive to user actions, and capable of complex functionality through hands-on coding exercises."
+                    data-fr="Ce cours complet sur les bases de JavaScript vous présente les concepts de programmation et le développement web interactif. Vous apprendrez à rendre les sites web dynamiques, réactifs aux actions des utilisateurs et capables de fonctionnalités complexes grâce à des exercices de codage pratiques.">
+                    This comprehensive JavaScript Basics course introduces you to programming concepts and interactive
+                    web development. You'll learn how to make websites dynamic, responsive to user actions, and capable
+                    of complex functionality through hands-on coding exercises.</p>
+            </div>
+
+            <!-- Course Details -->
+            <div class="course-details-grid">
+                <div class="detail-card">
+                    <h3 data-en="📚 Duration" data-fr="📚 Durée">📚 Duration</h3>
+                    <p data-en="8 Weeks (40 hours)" data-fr="8 semaines (40 heures)">8 Weeks (40 hours)</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="📊 Level" data-fr="📊 Niveau">📊 Level</h3>
+                    <p data-en="Beginner to Intermediate" data-fr="Débutant à Intermédiaire">Beginner to Intermediate
+                    </p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="✅ Skills" data-fr="✅ Compétences">✅ Skills</h3>
+                    <p data-en="10+ Programming Concepts" data-fr="10+ concepts de programmation">10+ Programming
+                        Concepts</p>
+                </div>
+                <div class="detail-card">
+                    <h3 data-en="🏆 Certificate" data-fr="🏆 Certificat">🏆 Certificate</h3>
+                    <p data-en="Yes, upon completion" data-fr="Oui, à la fin du cours">Yes, upon completion</p>
+                </div>
+            </div>
+
+            <!-- Prerequisites -->
+            <div class="course-section">
+                <h2 data-en="Prerequisites" data-fr="Prérequis">Prerequisites</h2>
+                <ul class="requirements">
+                    <li data-en="Basic HTML and CSS knowledge (HTML Fundamentals and CSS Styling courses recommended)"
+                        data-fr="Connaissances de base en HTML et CSS (cours Fondamentaux HTML et Mise en forme CSS recommandés)">
+                        ✓ Basic HTML and CSS knowledge (HTML Fundamentals and CSS Styling courses recommended)</li>
+                    <li data-en="Text editor and web browser" data-fr="Éditeur de texte et navigateur web">✓ Text editor
+                        and web browser</li>
+                    <li data-en="Logical thinking and problem-solving skills"
+                        data-fr="Pensée logique et compétences en résolution de problèmes">✓ Logical thinking and
+                        problem-solving skills</li>
+                </ul>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="course-section">
+                <h2 data-en="What You'll Learn" data-fr="Ce que vous apprendrez">What You'll Learn</h2>
+                <ul class="learning-outcomes">
+                    <li data-en="Understand JavaScript syntax and programming fundamentals"
+                        data-fr="Comprendre la syntaxe JavaScript et les fondamentaux de la programmation">Understand
+                        JavaScript syntax and programming fundamentals</li>
+                    <li data-en="Work with variables, data types, and operators"
+                        data-fr="Travailler avec les variables, types de données et opérateurs">Work with variables,
+                        data types, and operators</li>
+                    <li data-en="Control program flow with conditional statements and loops"
+                        data-fr="Contrôler le flux du programme avec des instructions conditionnelles et des boucles">
+                        Control program flow with conditional statements and loops</li>
+                    <li data-en="Create and manipulate arrays and objects"
+                        data-fr="Créer et manipuler des tableaux et des objets">Create and manipulate arrays and objects
+                    </li>
+                    <li data-en="Write reusable code with functions and scope"
+                        data-fr="Écrire du code réutilisable avec des fonctions et la portée">Write reusable code with
+                        functions and scope</li>
+                    <li data-en="Handle user interactions with DOM manipulation"
+                        data-fr="Gérer les interactions utilisateur avec la manipulation DOM">Handle user interactions
+                        with DOM manipulation</li>
+                    <li data-en="Work with events and event listeners"
+                        data-fr="Travailler avec les événements et les écouteurs d'événements">Work with events and
+                        event listeners</li>
+                    <li data-en="Implement form validation and data processing"
+                        data-fr="Implémenter la validation de formulaire et le traitement des données">Implement form
+                        validation and data processing</li>
+                    <li data-en="Debug JavaScript code and handle errors"
+                        data-fr="Déboguer le code JavaScript et gérer les erreurs">Debug JavaScript code and handle
+                        errors</li>
+                    <li data-en="Build interactive web applications"
+                        data-fr="Construire des applications web interactives">Build interactive web applications</li>
+                </ul>
+            </div>
+
+            <!-- Course Modules -->
+            <div class="course-section">
+                <h2 data-en="Course Modules" data-fr="Modules du cours">Course Modules</h2>
+
+                <div class="module">
+                    <h3 data-en="Module 1: Introduction to JavaScript" data-fr="Module 1 : Introduction à JavaScript">💻
+                        Module 1: Introduction to JavaScript</h3>
+                    <p data-en="Duration: 4 hours" data-fr="Durée : 4 heures">Duration: 4 hours</p>
+                    <ul>
+                        <li data-en="What is JavaScript and why it matters"
+                            data-fr="Qu'est-ce que JavaScript et pourquoi c'est important">What is JavaScript and why it
+                            matters</li>
+                        <li data-en="Setting up your development environment"
+                            data-fr="Configuration de votre environnement de développement">Setting up your development
+                            environment</li>
+                        <li data-en="Writing your first JavaScript code" data-fr="Écrire votre premier code JavaScript">
+                            Writing your first JavaScript code</li>
+                        <li data-en="JavaScript in HTML: script tags and console"
+                            data-fr="JavaScript dans HTML : balises script et console">JavaScript in HTML: script tags
+                            and console</li>
+                        <li data-en="Basic syntax and statements" data-fr="Syntaxe de base et instructions">Basic syntax
+                            and statements</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 2: Variables & Data Types" data-fr="Module 2 : Variables et types de données">💻
+                        Module 2: Variables & Data Types</h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="Declaring variables with var, let, and const"
+                            data-fr="Déclarer des variables avec var, let et const">Declaring variables with var, let,
+                            and const</li>
+                        <li data-en="Primitive data types: string, number, boolean"
+                            data-fr="Types de données primitifs : string, number, boolean">Primitive data types: string,
+                            number, boolean</li>
+                        <li data-en="Working with strings and string methods"
+                            data-fr="Travailler avec les chaînes et les méthodes de chaîne">Working with strings and
+                            string methods</li>
+                        <li data-en="Numbers, math operations, and type conversion"
+                            data-fr="Nombres, opérations mathématiques et conversion de type">Numbers, math operations,
+                            and type conversion</li>
+                        <li data-en="Boolean logic and comparison operators"
+                            data-fr="Logique booléenne et opérateurs de comparaison">Boolean logic and comparison
+                            operators</li>
+                        <li data-en="null, undefined, and typeof operator"
+                            data-fr="null, undefined et opérateur typeof">null, undefined, and typeof operator</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 3: Control Flow" data-fr="Module 3 : Flux de contrôle">💻 Module 3: Control Flow
+                    </h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="Conditional statements: if, else if, else"
+                            data-fr="Instructions conditionnelles : if, else if, else">Conditional statements: if, else
+                            if, else</li>
+                        <li data-en="Switch statements and multiple conditions"
+                            data-fr="Instructions switch et conditions multiples">Switch statements and multiple
+                            conditions</li>
+                        <li data-en="Ternary operator and logical operators"
+                            data-fr="Opérateur ternaire et opérateurs logiques">Ternary operator and logical operators
+                        </li>
+                        <li data-en="For loops and iteration" data-fr="Boucles for et itération">For loops and iteration
+                        </li>
+                        <li data-en="While and do-while loops" data-fr="Boucles while et do-while">While and do-while
+                            loops</li>
+                        <li data-en="Break and continue statements" data-fr="Instructions break et continue">Break and
+                            continue statements</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 4: Arrays & Objects" data-fr="Module 4 : Tableaux et objets">💻 Module 4: Arrays
+                        & Objects</h3>
+                    <p data-en="Duration: 6 hours" data-fr="Durée : 6 heures">Duration: 6 hours</p>
+                    <ul>
+                        <li data-en="Creating and accessing arrays" data-fr="Créer et accéder aux tableaux">Creating and
+                            accessing arrays</li>
+                        <li data-en="Array methods: push, pop, shift, unshift"
+                            data-fr="Méthodes de tableau : push, pop, shift, unshift">Array methods: push, pop, shift,
+                            unshift</li>
+                        <li data-en="Array iteration with forEach, map, filter"
+                            data-fr="Itération de tableau avec forEach, map, filter">Array iteration with forEach, map,
+                            filter</li>
+                        <li data-en="Creating and accessing object properties"
+                            data-fr="Créer et accéder aux propriétés d'objet">Creating and accessing object properties
+                        </li>
+                        <li data-en="Object methods and this keyword" data-fr="Méthodes d'objet et mot-clé this">Object
+                            methods and this keyword</li>
+                        <li data-en="Working with nested objects and arrays"
+                            data-fr="Travailler avec des objets et tableaux imbriqués">Working with nested objects and
+                            arrays</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 5: Functions" data-fr="Module 5 : Fonctions">💻 Module 5: Functions</h3>
+                    <p data-en="Duration: 6 hours" data-fr="Durée : 6 heures">Duration: 6 hours</p>
+                    <ul>
+                        <li data-en="Function declaration and function expression"
+                            data-fr="Déclaration de fonction et expression de fonction">Function declaration and
+                            function expression</li>
+                        <li data-en="Parameters, arguments, and return values"
+                            data-fr="Paramètres, arguments et valeurs de retour">Parameters, arguments, and return
+                            values</li>
+                        <li data-en="Function scope and hoisting" data-fr="Portée de fonction et hoisting">Function
+                            scope and hoisting</li>
+                        <li data-en="Arrow functions (ES6)" data-fr="Fonctions fléchées (ES6)">Arrow functions (ES6)
+                        </li>
+                        <li data-en="Callback functions and higher-order functions"
+                            data-fr="Fonctions de rappel et fonctions d'ordre supérieur">Callback functions and
+                            higher-order functions</li>
+                        <li data-en="Immediately Invoked Function Expressions (IIFE)"
+                            data-fr="Expressions de fonction invoquées immédiatement (IIFE)">Immediately Invoked
+                            Function Expressions (IIFE)</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 6: DOM Manipulation" data-fr="Module 6 : Manipulation DOM">💻 Module 6: DOM
+                        Manipulation</h3>
+                    <p data-en="Duration: 6 hours" data-fr="Durée : 6 heures">Duration: 6 hours</p>
+                    <ul>
+                        <li data-en="Understanding the Document Object Model"
+                            data-fr="Comprendre le Document Object Model">Understanding the Document Object Model</li>
+                        <li data-en="Selecting elements with querySelector"
+                            data-fr="Sélectionner des éléments avec querySelector">Selecting elements with querySelector
+                        </li>
+                        <li data-en="Changing content and attributes" data-fr="Changer le contenu et les attributs">
+                            Changing content and attributes</li>
+                        <li data-en="Creating and removing elements" data-fr="Créer et supprimer des éléments">Creating
+                            and removing elements</li>
+                        <li data-en="Working with CSS classes and styles"
+                            data-fr="Travailler avec les classes CSS et les styles">Working with CSS classes and styles
+                        </li>
+                        <li data-en="Traversing the DOM tree" data-fr="Parcourir l'arbre DOM">Traversing the DOM tree
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 7: Events & Interactivity" data-fr="Module 7 : Événements et interactivité">💻
+                        Module 7: Events & Interactivity</h3>
+                    <p data-en="Duration: 5 hours" data-fr="Durée : 5 heures">Duration: 5 hours</p>
+                    <ul>
+                        <li data-en="Event listeners and event objects"
+                            data-fr="Écouteurs d'événements et objets d'événement">Event listeners and event objects
+                        </li>
+                        <li data-en="Mouse and keyboard events" data-fr="Événements souris et clavier">Mouse and
+                            keyboard events</li>
+                        <li data-en="Form events and validation" data-fr="Événements de formulaire et validation">Form
+                            events and validation</li>
+                        <li data-en="Event bubbling and delegation" data-fr="Bullage d'événement et délégation">Event
+                            bubbling and delegation</li>
+                        <li data-en="Preventing default behavior" data-fr="Prévenir le comportement par défaut">
+                            Preventing default behavior</li>
+                        <li data-en="Creating interactive UI components" data-fr="Créer des composants UI interactifs">
+                            Creating interactive UI components</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3 data-en="Module 8: Error Handling & Debugging"
+                        data-fr="Module 8 : Gestion d'erreurs et débogage">💻 Module 8: Error Handling & Debugging</h3>
+                    <p data-en="Duration: 3 hours" data-fr="Durée : 3 heures">Duration: 3 hours</p>
+                    <ul>
+                        <li data-en="Understanding JavaScript errors" data-fr="Comprendre les erreurs JavaScript">
+                            Understanding JavaScript errors</li>
+                        <li data-en="Try-catch blocks and error handling"
+                            data-fr="Blocs try-catch et gestion d'erreurs">Try-catch blocks and error handling</li>
+                        <li data-en="Using console methods for debugging"
+                            data-fr="Utiliser les méthodes console pour le débogage">Using console methods for debugging
+                        </li>
+                        <li data-en="Browser developer tools" data-fr="Outils de développement du navigateur">Browser
+                            developer tools</li>
+                        <li data-en="Common debugging techniques" data-fr="Techniques de débogage courantes">Common
+                            debugging techniques</li>
+                        <li data-en="Writing clean, maintainable code" data-fr="Écrire du code propre et maintenable">
+                            Writing clean, maintainable code</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hands-On Projects -->
+            <div class="course-section">
+                <h2 data-en="Hands-On Projects" data-fr="Projets pratiques">Hands-On Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 data-en="Project 1: Interactive Calculator" data-fr="Projet 1 : Calculatrice interactive">🧮
+                            Project 1: Interactive Calculator</h3>
+                        <p data-en="Build a functional calculator with JavaScript event handling and DOM manipulation."
+                            data-fr="Construisez une calculatrice fonctionnelle avec gestion d'événements JavaScript et manipulation DOM.">
+                            Build a functional calculator with JavaScript event handling and DOM manipulation.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 2: To-Do List App" data-fr="Projet 2 : Application liste de tâches">📝
+                            Project 2: To-Do List App</h3>
+                        <p data-en="Create a dynamic to-do list with add, remove, and complete functionality."
+                            data-fr="Créez une liste de tâches dynamique avec ajout, suppression et fonctionnalité de complétion.">
+                            Create a dynamic to-do list with add, remove, and complete functionality.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 3: Quiz Application" data-fr="Projet 3 : Application de quiz">❓ Project 3:
+                            Quiz Application</h3>
+                        <p data-en="Build an interactive quiz with scoring and progress tracking."
+                            data-fr="Construisez un quiz interactif avec notation et suivi des progrès.">Build an
+                            interactive quiz with scoring and progress tracking.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 4: Weather Dashboard" data-fr="Projet 4 : Tableau de bord météo">🌤️
+                            Project 4: Weather Dashboard</h3>
+                        <p data-en="Create a weather app that fetches and displays weather data."
+                            data-fr="Créez une application météo qui récupère et affiche les données météorologiques.">
+                            Create a weather app that fetches and displays weather data.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 5: Image Gallery" data-fr="Projet 5 : Galerie d'images">🖼️ Project 5:
+                            Image Gallery</h3>
+                        <p data-en="Build an interactive image gallery with lightbox and navigation."
+                            data-fr="Construisez une galerie d'images interactive avec lightbox et navigation.">Build an
+                            interactive image gallery with lightbox and navigation.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="Project 6: Final Project" data-fr="Projet 6 : Projet final">🚀 Project 6: Final
+                            Project</h3>
+                        <p data-en="Combine all skills in a comprehensive web application of your choice."
+                            data-fr="Combinez toutes les compétences dans une application web complète de votre choix.">
+                            Combine all skills in a comprehensive web application of your choice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Resources -->
+            <div class="course-section">
+                <h2 data-en="Tools & Resources" data-fr="Outils et ressources">Tools & Resources</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h4 data-en="Development Tools" data-fr="Outils de développement">🛠️ Development Tools</h4>
+                        <ul>
+                            <li data-en="VS Code with JavaScript extensions"
+                                data-fr="VS Code avec extensions JavaScript">VS Code with JavaScript extensions</li>
+                            <li data-en="Chrome DevTools" data-fr="Chrome DevTools">Chrome DevTools</li>
+                            <li data-en="Node.js for running JavaScript" data-fr="Node.js pour exécuter JavaScript">
+                                Node.js for running JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card">
+                        <h4 data-en="Learning Resources" data-fr="Ressources d'apprentissage">📚 Learning Resources</h4>
+                        <ul>
+                            <li data-en="MDN Web Docs JavaScript" data-fr="MDN Web Docs JavaScript">MDN Web Docs
+                                JavaScript</li>
+                            <li data-en="JavaScript.info" data-fr="JavaScript.info">JavaScript.info</li>
+                            <li data-en="freeCodeCamp JavaScript" data-fr="freeCodeCamp JavaScript">freeCodeCamp
+                                JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card">
+                        <h4 data-en="Practice Platforms" data-fr="Plateformes de pratique">🎯 Practice Platforms</h4>
+                        <ul>
+                            <li data-en="CodePen for JavaScript" data-fr="CodePen pour JavaScript">CodePen for
+                                JavaScript</li>
+                            <li data-en="JSFiddle" data-fr="JSFiddle">JSFiddle</li>
+                            <li data-en="LeetCode (algorithms)" data-fr="LeetCode (algorithmes)">LeetCode (algorithms)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="course-cta">
+                <h2 data-en="Ready to Code?" data-fr="Prêt à coder ?">Ready to Code?</h2>
+                <p data-en="Start your programming journey and bring your websites to life with JavaScript!"
+                    data-fr="Commencez votre parcours de programmation et donnez vie à vos sites web avec JavaScript !">
+                    Start your programming journey and bring your websites to life with JavaScript!</p>
+                <a href="index.html#contact" class="cta-button" data-en="Enroll Now" data-fr="S'inscrire">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2026 Emerson HTML Lab. All rights reserved."
+                data-fr="&copy; 2026 Laboratoire HTML Emerson. Tous droits réservés.">&copy; 2026 Emerson HTML Lab. All
+                rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+    </footer>
+
+    <script>
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            changeLanguage(savedLanguage);
+        });
+    </script>
+</body>
+
+</html>

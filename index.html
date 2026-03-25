@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerson HTML Lab - Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Emerson HTML Lab</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link" data-en="Home" data-fr="Accueil">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
+                    <li><a href="#courses" class="nav-link" data-en="Courses" data-fr="Cours">Courses</a></li>
+                    <li><a href="#resources" class="nav-link" data-en="Resources" data-fr="Ressources">Resources</a>
+                    </li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-en="Welcome to Emerson HTML Lab" data-fr="Bienvenue au Laboratoire HTML Emerson">Welcome to Emerson
+                HTML Lab</h1>
+            <p data-en="Master Web Development with Hands-On Learning"
+                data-fr="Maîtrisez le développement web par l'apprentissage pratique">Master Web Development with
+                Hands-On Learning</p>
+            <button class="cta-button" data-en="Get Started" data-fr="Commencer">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-en="About Us" data-fr="À propos de nous">About Us</h2>
+            <p data-en="Emerson HTML Lab is dedicated to teaching modern web development through practical, project-based learning. Our mission is to empower students with the skills needed to create responsive and interactive websites."
+                data-fr="Le Laboratoire HTML Emerson est dédié à l'enseignement du développement web moderne par l'apprentissage pratique et basé sur des projets. Notre mission est de donner aux étudiants les compétences nécessaires pour créer des sites web réactifs et interactifs.">
+                Emerson HTML Lab is dedicated to teaching modern web development through practical,
+                project-based learning. Our mission is to empower students with the skills needed to
+                create responsive and interactive websites.
+            </p>
+            <div class="features">
+                <div class="feature-card">
+                    <h3 data-en="📚 Comprehensive Training" data-fr="📚 Formation complète">📚 Comprehensive Training
+                    </h3>
+                    <p data-en="Learn HTML, CSS, and JavaScript from beginner to advanced levels."
+                        data-fr="Apprenez HTML, CSS et JavaScript des niveaux débutant à avancé.">Learn HTML, CSS, and
+                        JavaScript from beginner to advanced levels.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-en="🛠️ Hands-On Projects" data-fr="🛠️ Projets pratiques">🛠️ Hands-On Projects</h3>
+                    <p data-en="Build real-world projects and develop your portfolio."
+                        data-fr="Construisez des projets réels et développez votre portfolio.">Build real-world projects
+                        and develop your portfolio.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-en="👥 Expert Support" data-fr="👥 Support expert">👥 Expert Support</h3>
+                    <p data-en="Get guidance from experienced instructors and mentors."
+                        data-fr="Obtenez des conseils d'instructeurs et de mentors expérimentés.">Get guidance from
+                        experienced instructors and mentors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 data-en="Our Courses" data-fr="Nos cours">Our Courses</h2>
+            <div class="course-grid">
+                <a href="html-fundamentals.html" class="course-card-link">
+                    <div class="course-card">
+                        <h3 data-en="HTML Fundamentals" data-fr="Fondamentaux HTML">HTML Fundamentals</h3>
+                        <p data-en="Learn the building blocks of web pages with HTML5."
+                            data-fr="Apprenez les fondamentaux des pages web avec HTML5.">Learn the building blocks of
+                            web
+                            pages with HTML5.</p>
+                        <div class="course-link-text" data-en="View Course →" data-fr="Voir le cours →">View Course →
+                        </div>
+                    </div>
+                </a>
+                <a href="css-styling.html" class="course-card-link">
+                    <div class="course-card">
+                        <h3 data-en="CSS Styling" data-fr="Mise en forme CSS">CSS Styling</h3>
+                        <p data-en="Master responsive design and modern CSS techniques."
+                            data-fr="Maîtrisez le design réactif et les techniques CSS modernes.">Master responsive
+                            design
+                            and modern CSS techniques.</p>
+                        <div class="course-link-text" data-en="View Course →" data-fr="Voir le cours →">View Course →
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript-basics.html" class="course-card-link">
+                    <div class="course-card">
+                        <h3 data-en="JavaScript Basics" data-fr="Bases de JavaScript">JavaScript Basics</h3>
+                        <p data-en="Bring your websites to life with interactive JavaScript."
+                            data-fr="Donnez vie à vos sites web avec JavaScript interactif.">Bring your websites to life
+                            with interactive JavaScript.</p>
+                        <div class="course-link-text" data-en="View Course →" data-fr="Voir le cours →">View Course →
+                        </div>
+                    </div>
+                </a>
+                <div class="course-card">
+                    <h3 data-en="Web Projects" data-fr="Projets Web">Web Projects</h3>
+                    <p data-en="Combine skills to build complete, functional websites."
+                        data-fr="Combinez les compétences pour créer des sites web complets et fonctionnels.">Combine
+                        skills to build complete, functional websites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 data-en="Resources" data-fr="Ressources">Resources</h2>
+            <p data-en="Access tutorials, documentation, and tools to accelerate your learning."
+                data-fr="Accédez à des tutoriels, de la documentation et des outils pour accélérer votre apprentissage.">
+                Access tutorials, documentation, and tools to accelerate your learning.</p>
+            <div class="resource-links">
+                <!-- Resources Section -->
+                <section id="resources" class="resources">
+                    <div class="container">
+                        <h2 data-en="Resources" data-fr="Ressources">Resources</h2>
+                        <p data-en="Access tutorials, documentation, and tools to accelerate your learning."
+                            data-fr="Accédez à des tutoriels, de la documentation et des outils pour accélérer votre apprentissage.">
+                            Access tutorials, documentation, and tools to accelerate your learning.</p>
+                        <div class="resource-links">
+                            <a href="#" class="resource-link" data-en="📖 Documentation" data-fr="📖 Documentation">📖
+                                Documentation</a>
+                            <a href="#" class="resource-link" data-en="🎥 Tutorials" data-fr="🎥 Tutoriels">🎥
+                                Tutorials</a>
+                            <a href="#" class="resource-link" data-en="💾 Code Examples"
+                                data-fr="💾 Exemples de code">💾 Code Examples</a>
+                            <a href="#" class="resource-link" data-en="🔧 Tools" data-fr="🔧 Outils">🔧 Tools</a>
+                            <!-- Contact Section -->
+                            <section id="contact" class="contact">
+                                <div class="container">
+                                    <h2 data-en="Get In Touch" data-fr="Nous contacter">Get In Touch</h2>
+                                    <p data-en="Have questions? We'd love to hear from you!"
+                                        data-fr="Vous avez des questions ? Nous aimerions vous entendre !">Have
+                                        questions? We'd love to hear from you!</p>
+                                    <form class="contact-form">
+                                        <input type="text" placeholder="Your Name" data-en-placeholder="Your Name"
+                                            data-fr-placeholder="Votre nom" required>
+                                        <input type="email" placeholder="Your Email" data-en-placeholder="Your Email"
+                                            data-fr-placeholder="Votre email" required>
+                                        <textarea placeholder="Your Message" data-en-placeholder="Your Message"
+                                            data-fr-placeholder="Votre message" rows="5" required></textarea>
+                                        <button type="submit" class="submit-button" data-en="Send Message"
+                                            data-fr="Envoyer le message">Send Message</button>
+                                    </form>
+                                </div>
+                            </section>
+
+                            <!-- Footer -->
+                            <footer class="footer">
+                                <div class="container">
+                                    <p data-en="&copy; 2026 Emerson HTML Lab. All rights reserved."
+                                        data-fr="&copy; 2026 Laboratoire HTML Emerson. Tous droits réservés.">&copy;
+                                        2026 Emerson HTML Lab. All rights reserved.</p>
+                                    <div class="social-links">
+                                        <a href="#">Twitter</a>
+                                        <a href="#">LinkedIn</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
+                                </div>
+                            </footer>
+
+                            <script>
+                                // Initialize language on page load
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    const savedLanguage = localStorage.getItem('language') || 'en';
+                                    changeLanguage(savedLanguage);
+                                });
+                            </script>
+</body>
+
+</html>
